@@ -205,3 +205,122 @@ font-size: 20px;
 .more:hover .dropdown-content, .industry:hover .dropdown-content, .public:hover .dropdown-content{
     display: block;
 }
+
+/* banner styling */
+.banner-img{
+    position: relative;
+}
+
+.banner-content{
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.banner-content h2{
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+.banner-content p{
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.authorname{
+    padding-bottom: 20px;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.watch{
+    width: 25%;
+    display: inline-block;
+    padding: 20px 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 17px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.watch::before{
+    font-family: "FontAwesome";
+    content: "\f144"; 
+    padding-right: 10px;
+    color: #fff;
+    float: left;
+    font-size: 45px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+  .watch:hover, .watch:hover::before{
+    background-color: #fff;
+    color: #3461B4;
+    transition: 1s ease;
+  }
+
+  .banner-floatercontent{
+    width: 96%;
+    position: absolute;
+    top: 0%;
+    left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-floatercontent p{
+    padding: 5px;
+    font-size: 15px;
+    color: #000;
+background-color: #fff; 
+ }
+
+ .banner-contactinfo{
+    width: 25%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    font-size: 17px;
+ }
+
+ .banner-contactinfo a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .banner-contactinfo a:hover, .call-to:hover:before,.mail-to:hover:before {
+    color: #848285;
+    transition: 1s ease;
+ }
+
+ .call-to,.mail-to {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .call-to:before,.mail-to:before {
+    padding-right: 10px;
+    font-family: "FontAwesome";
+    color: #fff;
+    float:left;
+    text-indent: 0;
+  }
+
+  .call-to:before{
+    content: "\f095";
+    
+  }
+
+  .mail-to:before{
+    content: "\f0e0";
+  }
