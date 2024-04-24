@@ -490,5 +490,106 @@ background-color: #fff;
     content: "\f1b2";
   }
 
+/* resources styling */
+.resources{
+    padding: 70px 0;
+    background-color: #F1F2F6;
+}
 
-  
+.resources .wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.resources h2{
+    font-size: 15px;
+    color: #616266;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.resources h2::before{
+    font-family: "FontAwesome";
+    content: "\f2b9"; 
+    padding-right: 5px;
+    float: left;
+    color: #616266;
+    font-size: 17px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+.resouce{
+    flex-basis: 47%;
+}
+
+.resouceful{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #D4D2D5;
+    border-bottom: 1px solid #D4D2D5;
+}
+
+.resouce h3{
+    padding-bottom: 15px;
+    font-size: 32px;
+    color: #353430;
+}
+
+.resouce span{
+    display: block;
+}
+
+.resouce span, .resouce p{
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: #333438; 
+    line-height: 1.5;
+}
+
+.learnmore{
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    color: #5E94B8;
+    font-size: 15px;
+}
+
+.learnmore::after{
+    font-family: "FontAwesome";
+    content: "\f105"; 
+    padding-left: 5px;
+    color: #5E94B8;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+  .learnmore:hover,  .learnmore:hover::after{
+    color: #000;
+    transition: 1s ease;
+}
+
+.view{
+    display: block;
+    padding: 15px 10px;
+    width: 14%;
+    margin: 70px auto 0;
+    background-color: #3461B4;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.view:hover{
+    background-color: transparent;
+    border: 1px solid #3461B4;
+    color: #3461B4;
+    transition: 1s ease;
+}
