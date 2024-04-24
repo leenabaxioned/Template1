@@ -60,3 +60,148 @@ img{
 }
 
 /* main document styling starts */
+/* header styling starts */
+header .wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.topnav{
+    background-color: #fff;
+}
+
+.bottomnav{
+    background-color: #3461B4;
+}
+
+.topnav, .topnav .nav-menu, .social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomnav .wrapper,.bottomnav .nav-menu{
+    display: flex;
+}
+
+.bottomnav .wrapper{
+    padding: 15px 0;
+    align-items: center;
+}
+
+.topnav .nav-menu{
+    flex-basis: 70%;
+    margin-right: 110px;
+}
+
+.topnav .nav-menu li a{
+    color: #000;
+    font-size: 15px;
+}
+
+.topnav .nav-menu li a:hover{
+    color: #26348C;
+    transition: ease;
+}
+
+.topnav .social-icons li a{
+    color: #9EA09F;
+}
+
+.logo-heading{
+    padding: 15px 0;
+}
+
+.logo-head{
+margin-right: 30px;
+font-size: 20px;
+}
+
+.bottomnav .nav-menu li{
+   margin: 0 20px;
+   font-size: 15px;
+}
+
+.bottomnav h1 a, .bottomnav .nav-menu li a{
+    color: #fff;
+}
+
+.bottomnav .nav-menu li:hover{
+    border-bottom: 1px solid #fff;
+    transition: 1s ease;
+}
+
+.more, .industry, .public{
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  
+  .more::before, .industry::before, .public::before{
+    font-family: "FontAwesome";
+    content: "\f107"; 
+    padding-left: 5px;
+    color: #404B58;
+    float: right;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+  .industry::before, .public::before{
+    color: #fff;
+  }
+
+  .search, .cart{
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+  
+  .search::before, .cart::before{
+    font-family: "FontAwesome"; 
+    padding-left: 5px;
+    float: left;
+    font-size: 15px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+  .search::before{
+    content: "\f002";
+    margin-right: 20px;
+    rotate: 90deg;
+  }
+
+  .cart::before{
+    content: "\f07a";
+  }
+
+  .search:hover::before,  .cart:hover::before{
+    color: #000;
+    transition: 1s ease;
+  }
+
+.dropdown-content{
+    margin-bottom: 20px;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 10px;
+    min-width: 100px;
+    background-color: #404B58;
+    color: #fff;
+}
+
+.more:hover .dropdown-content, .industry:hover .dropdown-content, .public:hover .dropdown-content{
+    display: block;
+}
