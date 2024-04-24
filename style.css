@@ -122,7 +122,7 @@ font-size: 20px;
 }
 
 .bottomnav .nav-menu li{
-   margin: 0 20px;
+   margin: 0 25px;
    font-size: 15px;
 }
 
@@ -192,6 +192,7 @@ font-size: 20px;
     margin-bottom: 20px;
     display: none;
     position: absolute;
+    z-index: 10;
 }
 
 .dropdown-content a{
@@ -346,7 +347,8 @@ background-color: #fff;
 
   .digital-info h2{
     padding-bottom: 20px;
-    font-size: 25px;
+    font-size: 30px;
+    color: #353430;
 }
 
 .digital-info p{
@@ -361,7 +363,132 @@ background-color: #fff;
     text-decoration: none;
 }
 
-.digital-info a:hover{
+.digital-info a:hover,  .digital-info a:hover::after{
     color: #000;
     transition: 1s ease;
 }
+
+.digital-info a{
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  
+  .digital-info a::after{
+    font-family: "FontAwesome";
+    content: "\f105"; 
+    padding-left: 5px;
+    color: #5E94B8;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+ 
+
+/* products styling starts */
+.products .wrapper{
+   width: 75%;
+   margin: 0 auto;
+   padding: 80px 0 70px;
+}
+
+.products-infos{
+   padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #D4D2D5;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 53%;
+}
+
+.product span{
+    display: inline-block;
+}
+
+.insights{
+    flex-basis: 85%;
+}
+
+.products-info:last-child{
+    border-bottom: 1px solid #D4D2D5;
+}
+
+.products h2, .products-infos h3{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #353430;
+}
+
+.products p{
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #333438; 
+}
+
+.insights p{
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.learn{
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    color: #5E94B8;
+    font-size: 15px;
+}
+
+.learn::after{
+    font-family: "FontAwesome";
+    content: "\f105"; 
+    padding-left: 5px;
+    color: #5E94B8;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    text-indent: 0;
+  }
+
+  .learn:hover,  .learn:hover::after{
+    color: #000;
+    transition: 1s ease;
+}
+
+  .product span{
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.product span::before{
+    font-family: "FontAwesome";
+    content: "\f0c0"; 
+    float: left;
+    padding-left: 5px;
+    color: #5E94B8;
+    font-size: 50px;
+    margin: 0;
+    text-indent: 0;
+  }
+  
+  .empower span::before{
+    content: "\f14e";
+  }
+
+  .operations span::before{
+    content: "\f2dc";
+  }
+
+  .operations span::before{
+    content: "\f1b2";
+  }
+
+
+  
